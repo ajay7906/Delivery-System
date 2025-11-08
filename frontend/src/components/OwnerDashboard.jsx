@@ -1,15 +1,19 @@
 import React from 'react'
-import Nav from './NaV.JSX'
+import Nav from './Nav'
 import { useSelector } from 'react-redux'
 import { FaUtensils } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { FaPen } from "react-icons/fa";
-import OwnerItemCard from './ownerItemCard';
+import OwnerItemCard from './OwnerItemCard';
 function OwnerDashboard() {
   const { myShopData } = useSelector(state => state.owner)
   const navigate = useNavigate()
 
-  
+
+
+
+
+  console.log('myShopData', myShopData)
   return (
     <div className='w-full min-h-screen bg-[#fff9f6] flex flex-col items-center'>
       <Nav />
